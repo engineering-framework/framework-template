@@ -1,0 +1,879 @@
+# framework.yml — Engineering Framework Checklist
+#
+# This file defines the full hierarchy of categories, subcategories, and
+# checklist items that will be synced into your organization when GitHub
+# sync is configured.
+#
+# Repository structure expected alongside this file:
+#   definitions/{item-slug}.md   — definition/guidance for each item
+#   templates/{template-slug}.md — reusable document templates
+
+categories:
+  - name: "Initiative Foundation"
+    slug: "initiative-foundation"
+    order: 1
+    description: "Foundation elements required before beginning any significant engineering initiative"
+    subcategories:
+      - name: "Research & Discovery"
+        slug: "research-and-discovery"
+        order: 1
+        items:
+          - name: "Problem Space Research Documented"
+            slug: "problem-space-research-documented"
+            order: 1
+            optional: false
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "problem-statement-and-motivations"
+          - name: "Technical Feasibility Analysis Completed"
+            slug: "technical-feasibility-analysis-completed"
+            order: 2
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Market Competitive Research"
+            slug: "market-competitive-research"
+            order: 3
+            optional: true
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Stakeholder Interviews Conducted"
+            slug: "stakeholder-interviews-conducted"
+            order: 4
+            optional: false
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "stakeholder-interview-summary"
+      - name: "Leadership & Ownership"
+        slug: "leadership-and-ownership"
+        order: 2
+        items:
+          - name: "Feature Initiative Lead Assigned"
+            slug: "feature-initiative-lead-assigned"
+            order: 1
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Cross-functional Team Composition Defined"
+            slug: "cross-functional-team-composition-defined"
+            order: 2
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Decision-making Authority Established"
+            slug: "decision-making-authority-established"
+            order: 3
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Escalation Paths Defined"
+            slug: "escalation-paths-defined"
+            order: 4
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+
+  - name: "Requirements & Vision"
+    slug: "requirements-and-vision"
+    order: 2
+    description: "Product vision, requirements, and business context documentation"
+    subcategories:
+      - name: "Product Artifacts"
+        slug: "product-artifacts"
+        order: 1
+        items:
+          - name: "Vision Document Created"
+            slug: "vision-document-created"
+            order: 1
+            optional: false
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "vision-document"
+          - name: "Requirements Documentation Functional & Non-functional"
+            slug: "requirements-documentation-functional-and-non-functional"
+            order: 2
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Success Criteria and KPIs Defined"
+            slug: "success-criteria-and-kpis-defined"
+            order: 3
+            optional: false
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "success-criteria-and-kpis"
+          - name: "User Stories and Acceptance Criteria Written"
+            slug: "user-stories-and-acceptance-criteria-written"
+            order: 4
+            optional: false
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "user-story-and-acceptance-criteria"
+          - name: "Story Breakdown Completed"
+            slug: "story-breakdown-completed"
+            order: 5
+            optional: true
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "user-story-and-acceptance-criteria"
+      - name: "Business Context"
+        slug: "business-context"
+        order: 2
+        items:
+          - name: "Problem Statement and Motivations Documented"
+            slug: "problem-statement-and-motivations-documented"
+            order: 1
+            optional: false
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "problem-statement-and-motivations"
+          - name: "Business Impact and Priorities Clarified"
+            slug: "business-impact-and-priorities-clarified"
+            order: 2
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Timeline Constraints Identified"
+            slug: "timeline-constraints-identified"
+            order: 3
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Business Dependencies Mapped"
+            slug: "business-dependencies-mapped"
+            order: 4
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+
+  - name: "Technical Design"
+    slug: "technical-design"
+    order: 3
+    description: "System architecture, interface definitions, and design decision documentation"
+    subcategories:
+      - name: "System Architecture"
+        slug: "system-architecture"
+        order: 1
+        items:
+          - name: "High-level System Design Completed"
+            slug: "high-level-system-design-completed"
+            order: 1
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Component-level Design Documented"
+            slug: "component-level-design-documented"
+            order: 2
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Infrastructure Diagrams Created"
+            slug: "infrastructure-diagrams-created"
+            order: 3
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Data Models Designed"
+            slug: "data-models-designed"
+            order: 4
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "New Table Specifications"
+            slug: "new-table-specifications"
+            order: 5
+            optional: true
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "new-table-specification"
+      - name: "Interface Definitions"
+        slug: "interface-definitions"
+        order: 2
+        items:
+          - name: "API Specifications Defined"
+            slug: "api-specifications-defined"
+            order: 1
+            optional: false
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "api-specification"
+          - name: "Domain Boundaries Established"
+            slug: "domain-boundaries-established"
+            order: 2
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "External Service Interfaces Documented"
+            slug: "external-service-interfaces-documented"
+            order: 3
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Data Contracts Specified"
+            slug: "data-contracts-specified"
+            order: 4
+            optional: false
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "data-contract"
+      - name: "Design Decisions"
+        slug: "design-decisions"
+        order: 3
+        items:
+          - name: "Architecture Decision Records ADRs Created"
+            slug: "architecture-decision-records-adrs-created"
+            order: 1
+            optional: false
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "architecture-decision-record"
+          - name: "Design Rationale and Trade-offs Documented"
+            slug: "design-rationale-and-trade-offs-documented"
+            order: 2
+            optional: false
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "architecture-decision-record"
+          - name: "Alternative Approaches Considered and Rejected"
+            slug: "alternative-approaches-considered-and-rejected"
+            order: 3
+            optional: false
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "architecture-decision-record"
+
+  - name: "Platform & Dependencies"
+    slug: "platform-and-dependencies"
+    order: 4
+    description: "Platform engineering impact assessment and cross-team dependency mapping"
+    subcategories:
+      - name: "Platform Engineering Impact"
+        slug: "platform-engineering-impact"
+        order: 1
+        items:
+          - name: "Infrastructure Requirements Identified"
+            slug: "infrastructure-requirements-identified"
+            order: 1
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Platform Service Dependencies Mapped"
+            slug: "platform-service-dependencies-mapped"
+            order: 2
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Shared Component Usage Modifications Planned"
+            slug: "shared-component-usage-modifications-planned"
+            order: 3
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+      - name: "Cross-Team Dependencies"
+        slug: "cross-team-dependencies"
+        order: 2
+        items:
+          - name: "Upstream Service Impacts Assessed"
+            slug: "upstream-service-impacts-assessed"
+            order: 1
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Downstream Service Impacts Assessed"
+            slug: "downstream-service-impacts-assessed"
+            order: 2
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Third-party Integrations Identified"
+            slug: "third-party-integrations-identified"
+            order: 3
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "External Team Coordination Planned"
+            slug: "external-team-coordination-planned"
+            order: 4
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+
+  - name: "Quality & Testing Strategy"
+    slug: "quality-and-testing-strategy"
+    order: 5
+    description: "QA involvement planning and testing pyramid strategy"
+    subcategories:
+      - name: "QA Involvement"
+        slug: "qa-involvement"
+        order: 1
+        items:
+          - name: "QA Team Engaged and Requirements Shared"
+            slug: "qa-team-engaged-and-requirements-shared"
+            order: 1
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Testing Approach and Strategy Defined"
+            slug: "testing-approach-and-strategy-defined"
+            order: 2
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Test Plan Developed"
+            slug: "test-plan-developed"
+            order: 3
+            optional: false
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "test-cases"
+          - name: "Test Cases Designed"
+            slug: "test-cases-designed"
+            order: 4
+            optional: false
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "test-cases"
+          - name: "Quality Gates and Criteria Established"
+            slug: "quality-gates-and-criteria-established"
+            order: 5
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+      - name: "Testing Pyramid"
+        slug: "testing-pyramid"
+        order: 2
+        items:
+          - name: "Unit Test Strategy Defined"
+            slug: "unit-test-strategy-defined"
+            order: 1
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Integration Test Approach Planned"
+            slug: "integration-test-approach-planned"
+            order: 2
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "End-to-end Test Requirements Specified"
+            slug: "end-to-end-test-requirements-specified"
+            order: 3
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Performance Test Plans Created"
+            slug: "performance-test-plans-created"
+            order: 4
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+
+  - name: "Observability & Operations"
+    slug: "observability-and-operations"
+    order: 6
+    description: "Monitoring, telemetry, performance expectations, and reliability planning"
+    subcategories:
+      - name: "Monitoring & Telemetry"
+        slug: "monitoring-and-telemetry"
+        order: 1
+        items:
+          - name: "Product User Analytics Requirements Defined"
+            slug: "product-user-analytics-requirements-defined"
+            order: 1
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Technical Monitoring Needs Identified"
+            slug: "technical-monitoring-needs-identified"
+            order: 2
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Logging Strategy Established"
+            slug: "logging-strategy-established"
+            order: 3
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Alerting Requirements Specified"
+            slug: "alerting-requirements-specified"
+            order: 4
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+      - name: "Performance & Reliability"
+        slug: "performance-and-reliability"
+        order: 2
+        items:
+          - name: "Performance Expectations Defined"
+            slug: "performance-expectations-defined"
+            order: 1
+            optional: false
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "slo-sla-definitions"
+          - name: "Performance Benchmarks Established"
+            slug: "performance-benchmarks-established"
+            order: 2
+            optional: false
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "capacity-planning"
+          - name: "SLO SLA Definitions Created"
+            slug: "slo-sla-definitions-created"
+            order: 3
+            optional: false
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "slo-sla-definitions"
+          - name: "Capacity Planning Completed"
+            slug: "capacity-planning-completed"
+            order: 4
+            optional: false
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "capacity-planning"
+          - name: "Error Handling Strategy Defined"
+            slug: "error-handling-strategy-defined"
+            order: 5
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Recovery Procedures Documented"
+            slug: "recovery-procedures-documented"
+            order: 6
+            optional: false
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "operational-runbook"
+
+  - name: "Security & Compliance"
+    slug: "security-and-compliance"
+    order: 7
+    description: "Security review requirements, threat modeling, and compliance/privacy assessment"
+    subcategories:
+      - name: "Security Requirements"
+        slug: "security-requirements"
+        order: 1
+        items:
+          - name: "Security Review Completed"
+            slug: "security-review-completed"
+            order: 1
+            optional: true
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Security Requirements Identified"
+            slug: "security-requirements-identified"
+            order: 2
+            optional: false
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "threat-model"
+          - name: "Threat Model Created"
+            slug: "threat-model-created"
+            order: 3
+            optional: true
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "threat-model"
+          - name: "Security Testing Approach Defined"
+            slug: "security-testing-approach-defined"
+            order: 4
+            optional: false
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "threat-model"
+      - name: "Compliance & Privacy"
+        slug: "compliance-and-privacy"
+        order: 2
+        items:
+          - name: "Compliance Requirements Identified"
+            slug: "compliance-requirements-identified"
+            order: 1
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Data Privacy Implications Assessed"
+            slug: "data-privacy-implications-assessed"
+            order: 2
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Audit Trail Requirements Defined"
+            slug: "audit-trail-requirements-defined"
+            order: 3
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Regulatory Requirements Reviewed"
+            slug: "regulatory-requirements-reviewed"
+            order: 4
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+
+  - name: "Deployment & Release"
+    slug: "deployment-and-release"
+    order: 8
+    description: "Deployment strategy selection, feature flag planning, and release coordination"
+    subcategories:
+      - name: "Deployment Strategy"
+        slug: "deployment-strategy"
+        order: 1
+        items:
+          - name: "Deployment Approach Selected"
+            slug: "deployment-approach-selected"
+            order: 1
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Feature Flag Strategy Defined"
+            slug: "feature-flag-strategy-defined"
+            order: 2
+            optional: false
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "feature-flag-strategy"
+          - name: "Configuration Management Approach Planned"
+            slug: "configuration-management-approach-planned"
+            order: 3
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Rollback Procedures Documented"
+            slug: "rollback-procedures-documented"
+            order: 4
+            optional: false
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "rollback-procedures"
+      - name: "Release Planning"
+        slug: "release-planning"
+        order: 2
+        items:
+          - name: "Release Phases and Milestones Defined"
+            slug: "release-phases-and-milestones-defined"
+            order: 1
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Communication Plan Created"
+            slug: "communication-plan-created"
+            order: 2
+            optional: false
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "communication-plan"
+          - name: "Training Needs Identified"
+            slug: "training-needs-identified"
+            order: 3
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Go-to-market Coordination Completed"
+            slug: "go-to-market-coordination-completed"
+            order: 4
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+
+  - name: "Scalability & Future-Proofing"
+    slug: "scalability-and-future-proofing"
+    order: 9
+    description: "Growth planning, scalability requirements, and extensibility considerations"
+    subcategories:
+      - name: "Growth Planning"
+        slug: "growth-planning"
+        order: 1
+        items:
+          - name: "Growth Projections Considered"
+            slug: "growth-projections-considered"
+            order: 1
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Scalability Requirements Defined"
+            slug: "scalability-requirements-defined"
+            order: 2
+            optional: false
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "capacity-planning"
+          - name: "Performance Scaling Strategy Planned"
+            slug: "performance-scaling-strategy-planned"
+            order: 3
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+      - name: "Extensibility"
+        slug: "extensibility"
+        order: 2
+        items:
+          - name: "Future Extensibility Requirements Considered"
+            slug: "future-extensibility-requirements-considered"
+            order: 1
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Technical Debt Implications Assessed"
+            slug: "technical-debt-implications-assessed"
+            order: 2
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Migration Strategies Planned"
+            slug: "migration-strategies-planned"
+            order: 3
+            optional: true
+            hasDefinition: true
+            hasTemplate: false
+
+  - name: "Risk Management"
+    slug: "risk-management"
+    order: 10
+    description: "Technical, timeline, and dependency risk identification and mitigation planning"
+    subcategories:
+      - name: "Risk Assessment"
+        slug: "risk-assessment"
+        order: 1
+        items:
+          - name: "Technical Risks Identified and Documented"
+            slug: "technical-risks-identified-and-documented"
+            order: 1
+            optional: false
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "risk-register"
+          - name: "Timeline Risks Assessed"
+            slug: "timeline-risks-assessed"
+            order: 2
+            optional: false
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "risk-register"
+          - name: "Dependency Risks Evaluated"
+            slug: "dependency-risks-evaluated"
+            order: 3
+            optional: false
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "risk-register"
+          - name: "Risk Mitigation Strategies Defined"
+            slug: "risk-mitigation-strategies-defined"
+            order: 4
+            optional: false
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "risk-register"
+      - name: "Contingency Planning"
+        slug: "contingency-planning"
+        order: 2
+        items:
+          - name: "Rollback Plans Documented"
+            slug: "rollback-plans-documented"
+            order: 1
+            optional: false
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "rollback-procedures"
+          - name: "Alternative Approaches Identified"
+            slug: "alternative-approaches-identified"
+            order: 2
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Emergency Procedures Defined"
+            slug: "emergency-procedures-defined"
+            order: 3
+            optional: false
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "operational-runbook"
+
+  - name: "Resource Planning"
+    slug: "resource-planning"
+    order: 11
+    description: "Team capacity assessment, skills identification, and budget planning"
+    subcategories:
+      - name: "Team & Capacity"
+        slug: "team-and-capacity"
+        order: 1
+        items:
+          - name: "Team Capacity Assessed"
+            slug: "team-capacity-assessed"
+            order: 1
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Required Skills Identified"
+            slug: "required-skills-identified"
+            order: 2
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Timeline Estimates Created"
+            slug: "timeline-estimates-created"
+            order: 3
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Resource Allocation Planned"
+            slug: "resource-allocation-planned"
+            order: 4
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+      - name: "Budget & External Resources"
+        slug: "budget-and-external-resources"
+        order: 2
+        items:
+          - name: "Budget Requirements Identified"
+            slug: "budget-requirements-identified"
+            order: 1
+            optional: false
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "budget-requirements"
+          - name: "External Resource Needs Assessed"
+            slug: "external-resource-needs-assessed"
+            order: 2
+            optional: false
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "vendor-contractor-requirements"
+          - name: "Vendor Contractor Requirements Defined"
+            slug: "vendor-contractor-requirements-defined"
+            order: 3
+            optional: false
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "vendor-contractor-requirements"
+
+  - name: "Documentation & Communication"
+    slug: "documentation-and-communication"
+    order: 12
+    description: "Technical documentation requirements and stakeholder communication planning"
+    subcategories:
+      - name: "Technical Documentation"
+        slug: "technical-documentation"
+        order: 1
+        items:
+          - name: "Implementation Guides Created"
+            slug: "implementation-guides-created"
+            order: 1
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Operational Runbooks Written"
+            slug: "operational-runbooks-written"
+            order: 2
+            optional: false
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "operational-runbook"
+          - name: "API Documentation Completed"
+            slug: "api-documentation-completed"
+            order: 3
+            optional: false
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "api-specification"
+          - name: "System Documentation Updated"
+            slug: "system-documentation-updated"
+            order: 4
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+      - name: "Stakeholder Communication"
+        slug: "stakeholder-communication"
+        order: 2
+        items:
+          - name: "Regular Status Update Cadence Established"
+            slug: "regular-status-update-cadence-established"
+            order: 1
+            optional: false
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "communication-plan"
+          - name: "Communication Channels Defined"
+            slug: "communication-channels-defined"
+            order: 2
+            optional: false
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "communication-plan"
+          - name: "Decision Documentation Process Established"
+            slug: "decision-documentation-process-established"
+            order: 3
+            optional: false
+            hasDefinition: true
+            hasTemplate: false
+          - name: "Stakeholder Notification Plan Created"
+            slug: "stakeholder-notification-plan-created"
+            order: 4
+            optional: false
+            hasDefinition: true
+            hasTemplate: true
+            templateSlug: "communication-plan"
+
+templates:
+  - slug: "problem-statement-and-motivations"
+    name: "Problem Statement and Motivations"
+    file: "templates/problem-statement-and-motivations.md"
+  - slug: "stakeholder-interview-summary"
+    name: "Stakeholder Interview Summary"
+    file: "templates/stakeholder-interview-summary.md"
+  - slug: "vision-document"
+    name: "Vision Document"
+    file: "templates/vision-document.md"
+  - slug: "success-criteria-and-kpis"
+    name: "Success Criteria and KPIs"
+    file: "templates/success-criteria-and-kpis.md"
+  - slug: "user-story-and-acceptance-criteria"
+    name: "User Story and Acceptance Criteria"
+    file: "templates/user-story-and-acceptance-criteria.md"
+  - slug: "new-table-specification"
+    name: "New Table Specification"
+    file: "templates/new-table-specification.md"
+  - slug: "api-specification"
+    name: "API Specification"
+    file: "templates/api-specification.md"
+  - slug: "data-contract"
+    name: "Data Contract"
+    file: "templates/data-contract.md"
+  - slug: "architecture-decision-record"
+    name: "Architecture Decision Record"
+    file: "templates/architecture-decision-record.md"
+  - slug: "test-cases"
+    name: "Test Cases"
+    file: "templates/test-cases.md"
+  - slug: "slo-sla-definitions"
+    name: "SLO / SLA Definitions"
+    file: "templates/slo-sla-definitions.md"
+  - slug: "capacity-planning"
+    name: "Capacity Planning"
+    file: "templates/capacity-planning.md"
+  - slug: "operational-runbook"
+    name: "Operational Runbook"
+    file: "templates/operational-runbook.md"
+  - slug: "threat-model"
+    name: "Threat Model"
+    file: "templates/threat-model.md"
+  - slug: "feature-flag-strategy"
+    name: "Feature Flag Strategy"
+    file: "templates/feature-flag-strategy.md"
+  - slug: "rollback-procedures"
+    name: "Rollback Procedures"
+    file: "templates/rollback-procedures.md"
+  - slug: "communication-plan"
+    name: "Communication Plan"
+    file: "templates/communication-plan.md"
+  - slug: "risk-register"
+    name: "Risk Register"
+    file: "templates/risk-register.md"
+  - slug: "budget-requirements"
+    name: "Budget Requirements"
+    file: "templates/budget-requirements.md"
+  - slug: "vendor-contractor-requirements"
+    name: "Vendor / Contractor Requirements"
+    file: "templates/vendor-contractor-requirements.md"
